@@ -7,9 +7,11 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <App />
-    </BrowserRouter>
+   ReactDOM.render((
+   <BrowserRouter basename={process.env.YouTube-Clone-using-React-JS/}>
+     <App />
+   </BrowserRouter>
+), ...)  
   </React.StrictMode>
 );
 
