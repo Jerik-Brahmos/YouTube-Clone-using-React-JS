@@ -1,0 +1,33 @@
+.search{
+    flex-basis: 30%;
+}.s_card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.search img{
+    flex-basis:45%;
+    width: 37%;
+    border-radius: 10px;
+}
+.search_info{
+    flex-basis:50%;
+    margin: 5px;
+}
+.search_info h6{
+    color: #AAAAAA;
+    font-size: 9px;
+    margin-top: 3px;
+}
+.search_info h5{
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: white;
+}
+@media (max-width:900px){
+    .search{
+        display:none;
+    }
+
+}
