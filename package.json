@@ -2,7 +2,7 @@
   "homepage": "https:/Jerik-Brahmos.github.io/YouTube-Clone-using-React-JS",
   "name": "youtube_clone",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
