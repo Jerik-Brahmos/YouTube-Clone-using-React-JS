@@ -13,7 +13,7 @@ export const Sidebar = ({ menu, setmenu, category, setcategory }) => {
     <div className={`sidebar ${menu === "true" ? "" : "small_sidebar"}`}>
       
 
-      <div className={`Sidebarrow ${category === 0 ? "selected" : ""}`} onClick={() => setcategory(0)}>
+      <div className={`Sidebarrow ${category === 0 ? "active" : ""}`} onClick={() => setcategory(0)}>
         <HomeIcon className="Sidebarrow_icons" />
         <h2 className='Sidebarrow_titles' >Home</h2>
       </div>

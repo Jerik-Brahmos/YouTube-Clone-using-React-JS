@@ -1,80 +1,39 @@
 import React from 'react'
 import './Rvideos.css'
-import tb1 from './assests/emc_html_thumbnail.jpeg'
-import {Link} from 'react-router-dom'
-const Rvideos = ({menu, category, setcategory}) => {
+import { Link } from 'react-router-dom'
+
+import {Like_converter } from './data'
+import moment from 'moment'
+
+const Rvideos = ({ menu, category, setcategory, data, setdata }) => {
+
+
   return (
     <div className='Rvideos'>
       <div className='top_category'>
-        <h4 className={`tcategory ${category === 0 ? "selected" : ""}`} onClick={()=>setcategory(0)}>All</h4>
-        <h4 className={`tcategory ${category === 10 ? "selected" : ""}`} onClick={()=>setcategory(10)}>Music</h4>
-        <h4 className={`tcategory ${category === 17 ? "selected" : ""}`}  onClick={()=>setcategory(17)}>Sports</h4>
-        <h4 className={`tcategory ${category === 34 ? "selected" : ""}`}  onClick={()=>setcategory(34)}>Gaming</h4>
-        <h4 className={`tcategory ${category === 23 ? "selected" : ""}`}  onClick={()=>setcategory(23)}>Comedy</h4>
-        <h4 className={`tcategory ${category === 24 ? "selected" : ""}`}  onClick={()=>setcategory(24)}>Entertainment</h4>
-        <h4 className={`tcategory ${category === 25 ? "selected" : ""}`}  onClick={()=>setcategory(25)}>News</h4>
-        <h4 className={`tcategory ${category === 30 ? "selected" : ""}`}  onClick={()=>setcategory(30)}>Movies</h4>
-        <h4 className={`tcategory ${category === 28 ? "selected" : ""}`}  onClick={()=>setcategory(28)}>Technology</h4>
-        <h4 className={`tcategory ${category === 31 ? "selected" : ""}`}  onClick={()=>setcategory(31)}>Anime</h4>
-        <h4 className={`tcategory ${category === 27 ? "selected" : ""}`}  onClick={()=>setcategory(27)}>Education</h4>
-        <h4 className={`tcategory ${category === 44 ? "selected" : ""}`}  onClick={()=>setcategory(44)}>Trailers</h4>
-        <h4 className={`tcategory ${category === 42 ? "selected" : ""}`}  onClick={()=>setcategory(42)}>Shorts</h4>
+        <h4 className={`tcategory ${category === 0 ? "selected" : ""}`} onClick={() => setcategory(0)}>All</h4>
+        <h4 className={`tcategory ${category === 10 ? "selected" : ""}`} onClick={() => setcategory(10)}>Music</h4>
+        <h4 className={`tcategory ${category === 17 ? "selected" : ""}`} onClick={() => setcategory(17)}>Sports</h4>
+        <h4 className={`tcategory ${category === 20 ? "selected" : ""}`} onClick={() => setcategory(20)}>Gaming</h4>
+        <h4 className={`tcategory ${category === 23 ? "selected" : ""}`} onClick={() => setcategory(23)}>Comedy</h4>
+        <h4 className={`tcategory ${category === 24 ? "selected" : ""}`} onClick={() => setcategory(24)}>Entertainment</h4>
+        <h4 className={`tcategory ${category === 25 ? "selected" : ""}`} onClick={() => setcategory(25)}>News</h4>
+        <h4 className={`tcategory ${category === 1 ? "selected" : ""}`} onClick={() => setcategory(1)}>Movies</h4>
+        <h4 className={`tcategory ${category === 28 ? "selected" : ""}`} onClick={() => setcategory(28)}>Technology</h4>
+        <h4 className={`tcategory ${category === 22 ? "selected" : ""}`} onClick={() => setcategory(22)}>Blog</h4>
+        <h4 className={`tcategory ${category === 2 ? "selected" : ""}`} onClick={() => setcategory(2)}>Automobiles</h4>
       </div>
-      <div className={`feed ${menu==="true"?"":"larger"}`}>
-        <Link to={`video/20/4521`} className='card'>
-          <img src={tb1} alt="thumbnail"></img>
-          <h4>Mastering HTML Basics and Beyond | Your Ultimate Guide to Begin Web Development in Tamil</h4>
-          <h6>Error Makes Clever</h6>
-          <h6>859K views &bull; 7 months ago</h6>
-        </Link>
-        <div className='card'>
-          <img src={tb1} alt="thumbnail"></img>
-          <h4>Mastering HTML Basics and Beyond | Your Ultimate Guide to Begin Web Development in Tamil</h4>
-          <h6>Error Makes Clever</h6>
-          <h6>859K views &bull; 7 months ago</h6>
-        </div>
-        <div className='card'>
-          <img src={tb1} alt="thumbnail"></img>
-          <h4>Mastering HTML Basics and Beyond | Your Ultimate Guide to Begin Web Development in Tamil</h4>
-          <h6>Error Makes Clever</h6>
-          <h6>859K views &bull; 7 months ago</h6>
-        </div>
-        <div className='card'>
-          <img src={tb1} alt="thumbnail"></img>
-          <h4>Mastering HTML Basics and Beyond | Your Ultimate Guide to Begin Web Development in Tamil</h4>
-          <h6>Error Makes Clever</h6>
-          <h6>859K views &bull; 7 months ago</h6>
-        </div>
-        <div className='card'>
-          <img src={tb1} alt="thumbnail"></img>
-          <h4>Mastering HTML Basics and Beyond | Your Ultimate Guide to Begin Web Development in Tamil</h4>
-          <h6>Error Makes Clever</h6>
-          <h6>859K views &bull; 7 months ago</h6>
-        </div>
-        <div className='card'>
-          <img src={tb1} alt="thumbnail"></img>
-          <h4>Mastering HTML Basics and Beyond | Your Ultimate Guide to Begin Web Development in Tamil</h4>
-          <h6>Error Makes Clever</h6>
-          <h6>859K views &bull; 7 months ago</h6>
-        </div>
-        <div className='card'>
-          <img src={tb1} alt="thumbnail"></img>
-          <h4>Mastering HTML Basics and Beyond | Your Ultimate Guide to Begin Web Development in Tamil</h4>
-          <h6>Error Makes Clever</h6>
-          <h6>859K views &bull; 7 months ago</h6>
-        </div>
-        <div className='card'>
-          <img src={tb1} alt="thumbnail"></img>
-          <h4>Mastering HTML Basics and Beyond | Your Ultimate Guide to Begin Web Development in Tamil</h4>
-          <h6>Error Makes Clever</h6>
-          <h6>859K views &bull; 7 months ago</h6>
-        </div>
-        <div className='card'>
-          <img src={tb1} alt="thumbnail"></img>
-          <h4>Mastering HTML Basics and Beyond | Your Ultimate Guide to Begin Web Development in Tamil</h4>
-          <h6>Error Makes Clever</h6>
-          <h6>859K views &bull; 7 months ago</h6>
-        </div>
+      <div className={`feed ${menu === "true" ? "" : "larger"}`}>
+        {data.map((item, index) => {
+          return (
+            <Link to={`video/${item.snippet.categoryId}/${item.id}`} className='card'>
+              <img src={item.snippet.thumbnails.medium.url} alt="thumbnail"></img>
+              <h4>{item.snippet.title}</h4>
+              <h6>{item.snippet.channelTitle}</h6>
+              <h6>{Like_converter(item.statistics.viewCount)} &bull; {moment(item.snippet.publishedAt).fromNow()}</h6>
+            </Link>
+          )
+        })}
       </div>
     </div>
   )

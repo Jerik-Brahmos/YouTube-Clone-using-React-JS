@@ -5,12 +5,13 @@ import SearchIcon from '@mui/icons-material/Search';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Avatar from '@mui/material/Avatar';
+import {Link} from "react-router-dom";
 export const Header = ({menu,setmenu}) => {
     return (
         <div className='header'>
             <div className="header_left">
                 <MenuIcon onClick={()=>setmenu(menu==="false"?"true":"false")} className='menuicon icon'/>
-                <img className="header_logo icon" src="./logoy.png" alt="logo"></img>
+                <Link to='/' ><img className="header_logo icon" src="./logoy.png" alt="logo"></img></Link>
             </div>
             <div className='header_mid'>
                 <input type="text" className='searchbox' placeholder='Search'></input>

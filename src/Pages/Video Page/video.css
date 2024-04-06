@@ -2,3 +2,9 @@
    display: flex;
    justify-content: space-between;
 }
+@media (max-width:900px){
+   .videopage_container{
+   padding-left: 5%;
+   padding-right:5%;
+   }
+}

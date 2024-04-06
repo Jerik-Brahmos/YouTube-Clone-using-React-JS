@@ -1,67 +1,108 @@
-*{
-    margin:0%;
-    padding:0%;
+* {
+    margin: 0%;
+    padding: 0%;
     margin-top: 1px;
-    
+
 }
-.header{
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position:sticky;
+    position: sticky;
 
 }
-.header_left{
+
+.header_left {
     display: flex;
     align-items: center;
 }
-.menuicon{
+
+.menuicon {
     margin-left: 15px;
-    color:lightgray
+    color: lightgray
 }
-.header_logo{
+
+.header_logo {
     object-fit: contain;
-    height:20px;
-    margin-left:15px;
+    height: 20px;
+    margin-left: 15px;
     background-color: black;
- 
+
 
 }
-.header_mid{
+
+.header_mid {
     display: flex;
     align-items: center;
     border: 2px solid gray;
-    width:  35%;
+    width: 35%;
     border-radius: 35px;
 }
-.searchbox{
-    flex:1;
-    border:none;
-    margin-left:10px;
+
+.searchbox {
+    flex: 1;
+    border: none;
+    margin-left: 10px;
     outline: none;
     background: none;
     color: lightgray;
 }
-.searchicon{
-    width:40px !important;
+
+.searchicon {
+
     color: lightgray;
- 
+    width: 100%;
+
 
 }
-.searchicon:hover{
+
+.searchicon:hover {
     cursor: pointer;
 }
-.header_right{
+
+.header_right {
     display: flex;
     align-items: center;
 
 }
-.notiicon, .avatar, .videoicon{
+
+.notiicon,
+.avatar,
+.videoicon {
     margin-right: 12px;
-    background-color:inherit;
-    color:white;
+    background-color: inherit;
+    color: white;
 
 }
-.icon:hover{
+
+.icon:hover {
     cursor: pointer;
+}
+
+@media (max-width:700px) {
+    .header_right {
+        display: none
+    }
+
+    .searchbox {
+        width: 12%;
+        height: 10%;
+    }
+
+    .header_mid {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 28%;
+        width: 40%;
+    }
+
+    .header_logo {
+        height: 14px
+    }
+
+    .menuicon {
+        height: 14px;
+    }
+
 }

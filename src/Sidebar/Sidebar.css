@@ -51,7 +51,7 @@
     font-weight: bold;
 }
 
-.Sidebarrow.selected {
+.Sidebarrow.active {
     font-weight: bold;
     background-color: rgb(39, 39, 39);
 }
@@ -103,15 +103,9 @@
     margin-top: 10px;
 }
 
-
-@media screen and (max-width:750px) {
+@media (max-width:900px) {
     .sidebar {
-        width: 40px;
-    }
-    .Sidebarrow_titles, .subscription_p, .Subscribed_channel>h2 {
         display: none;
     }
-    .Subscribed_channel>.img {
-        margin-top: 10px;
-    }
+
 }
