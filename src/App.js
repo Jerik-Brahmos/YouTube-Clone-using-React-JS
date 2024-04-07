@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <Header menu={menu} setmenu={setmenu} />
        <Routes>
-        <Route path='YouTube-Clone-using-React-JS/' element={<Home menu={menu} setmenu={setmenu} category={category} setcategory={setcategory} data={data} setdata={setdata} />}></Route>
+        <Route path='/' element={<Home menu={menu} setmenu={setmenu} category={category} setcategory={setcategory} data={data} setdata={setdata} />}></Route>
         <Route path='/video/:categoryId/:videoId' element={<Video menu={menu} setmenu={setmenu} category={category} setcategory={setcategory} data={data} setdata={setdata}/>}></Route>
        </Routes> 
       
