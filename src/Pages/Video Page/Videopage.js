@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Videopage.css';
-import Axios from 'axios';
-import v1 from '../../assests/video1.mp4'
 import ThumbDownAltOutlinedIcon from '@mui/icons-material/ThumbDownAltOutlined';
 import ThumbUpAltOutlinedIcon from '@mui/icons-material/ThumbUpAltOutlined';
 import GetAppOutlinedIcon from '@mui/icons-material/GetAppOutlined';
 import ReplyOutlinedIcon from '@mui/icons-material/ReplyOutlined';
-import channel_logo from '../../assests/emc_logo.jpg'
-import person_pic from '../../assests/jerik.jpg'
 import { API_KEY } from '../../data'
 import { Like_converter } from '../../data';
 import moment from 'moment'
