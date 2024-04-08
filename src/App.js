@@ -10,7 +10,7 @@ function App() {
   const[category,setcategory]=useState(0)
   const[data, setdata] = useState([])
   const fetchitem = () => {
-    Axios.get(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=60&regionCode=US&videoCategoryId=${category}&key=${API_KEY}`)
+    Axios.get(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&videoCategoryId=${category}&key=${API_KEY}`)
       .then((res) => setdata(res.data.items))
   }
 

@@ -39,6 +39,11 @@ iframe{
     padding-left: 10px;
     padding-right: 10px;
 }
+.subscribed{
+    background-color: #272727;
+    color: white;
+    border: 0;
+}
 .subs_count{
     color:rgb(169, 169, 169);
     font-weight:600px;
@@ -177,5 +182,30 @@ iframe{
         margin-left: 0px;
     }
 
+    iframe{
+        width: 100vw;
+        height: 60vw;
+        border-radius: 0%;
+    }
+    .icons{
+        margin-top: 8px;
+        margin-bottom: 7px;
+        margin-left: 5px;
+    }
+    .channel_profile{
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+    .video h2{
+        margin:5px;
+    }
+    .description{
+        margin: 5px;
+        width: 97%;
+    }
+    .comments{
+        margin: 5px;
+    }
+    
     
 }

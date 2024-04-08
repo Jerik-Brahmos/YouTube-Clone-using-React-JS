@@ -75,27 +75,30 @@
     color: white;
 
 }
+.avatar{
+    border-radius: 50%;
+    width: 30px;
+}
+
 
 .icon:hover {
     cursor: pointer;
 }
 
 @media (max-width:700px) {
-    .header_right {
+    .header_right > .notiicon{
+        display: none
+    }
+    .header_right > .videoicon{
         display: none
     }
 
+
     .searchbox {
         width: 12%;
-        height: 10%;
+
     }
 
-    .header_mid {
-        display: flex;
-        justify-content: flex-start;
-        margin-right: 28%;
-        width: 40%;
-    }
 
     .header_logo {
         height: 14px

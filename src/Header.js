@@ -23,7 +23,7 @@ export const Header = ({ menu, setmenu}) => {
             <div className="header_right">
                 <VideoCallIcon className='videoicon icon' />
                 <NotificationsIcon className='notiicon icon' />
-                <Avatar className="avatar icon" src="./jerik.jpg" alt="" />
+                <img className="avatar icon" src="./jerik.jpg" alt=""></img>
             </div>
 
         </div>
