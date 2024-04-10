@@ -25,6 +25,27 @@
     margin-bottom: 5px;
     color: white;
 }
+.loading {
+    border: 3px solid #FF0000;
+    border-left-color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically on the entire viewport height */
+  }
+  
 @media (max-width:900px){
     .recommended{
         display:none;

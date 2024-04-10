@@ -4,9 +4,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
-export const Header = ({ menu, setmenu}) => {
+import { useContext } from 'react'
+import { AppContext } from './App'
+export const Header = () => {
+    const { menu, setmenu } = useContext(AppContext);
 
     return (
         <div className='header'>

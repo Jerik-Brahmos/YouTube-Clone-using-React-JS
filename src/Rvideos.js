@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom'
 
 import {Like_converter } from './data'
 import moment from 'moment'
-
-const Rvideos = ({ menu, category, setcategory, data, setdata }) => {
-
+import { useContext } from 'react'
+import { AppContext } from './App'
+const Rvideos = () => {
+  const { menu, category,setcategory,data } = useContext(AppContext);
 
   return (
     <div className='Rvideos'>

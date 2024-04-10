@@ -8,7 +8,10 @@ import HistoryIcon from '@mui/icons-material/History';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
-export const Sidebar = ({ menu, setmenu, category, setcategory }) => {
+import { useContext } from 'react'
+import { AppContext } from '../App'
+export const Sidebar = () => {
+  const { menu, setmenu,category,setcategory } = useContext(AppContext);
   return (
     <div className={`sidebar ${menu === "true" ? "" : "small_sidebar"}`}>
       

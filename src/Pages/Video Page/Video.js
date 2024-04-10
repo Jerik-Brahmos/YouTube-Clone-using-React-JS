@@ -3,11 +3,11 @@ import Videopage from './Videopage'
 import './video.css'
 import Recommended from './Recommended'
 import { useParams } from 'react-router-dom'
-const Video = ({menu,setmenu,data,setdata}) => {
+const Video = () => {
   const {categoryId,videoId}=useParams();
   return (
     <div className='videopage_container'>
-       <Videopage videoId={videoId} />
+       <Videopage />
        <Recommended categoryId={categoryId}/>
 
     </div>

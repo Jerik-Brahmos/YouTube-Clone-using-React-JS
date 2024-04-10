@@ -1,21 +1,27 @@
-import React,{useState,useEffect} from 'react'
-import Header from '../Header'
+import React from 'react'
 import Sidebar from '../Sidebar/Sidebar'
 import Rvideos from '../Rvideos'
 import './Home.css'
+import { useContext } from 'react'
+import { AppContext } from '../App'
+
+const Home = () => {
+    const { loading, setLoading } = useContext(AppContext);
 
 
-const Home = ({menu,setmenu,category,setcategory,data,setdata}) => {
-
-
- 
     return (
         <div className='Home'>
-            
-            <div className='main'>
-                <Sidebar menu={menu} setmenu={setmenu} category={category} setcategory={setcategory} />
-                <Rvideos menu={menu}  category={category} setcategory={setcategory}  data={data} setdata={setdata}/>
+            {loading ? (
+                <div className='loading-container'>
+                <div className='loading'></div>
             </div>
+            
+            ) : (
+                <div className='main'>
+                    <Sidebar />
+                    <Rvideos />
+                </div>
+            )}
         </div>
     )
 }
