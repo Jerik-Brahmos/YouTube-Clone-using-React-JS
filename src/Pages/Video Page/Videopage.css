@@ -179,7 +179,7 @@ iframe{
 @media (max-width:900px){
     .playvideo{
         flex-basis: 100%;
-        margin-left: 0px;
+        margin: 0%;
     }
 
     iframe{
@@ -194,16 +194,19 @@ iframe{
     }
     .channel_profile{
         flex-wrap: wrap;
-        margin: 5px;
+        width: 100vw;
+        
     }
     .video h2{
         margin:5px;
+        width: 100vw;
     }
     .description{
         margin: 5px;
-        width: 97%;
+        width: 99vw;
     }
     .comments{
+        width: 97vw;
         margin: 5px;
     }
     
