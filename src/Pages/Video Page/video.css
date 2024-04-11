@@ -1,4 +1,11 @@
 .videopage_container{
    display: flex;
    justify-content: space-between;
+   
+}
+  
+@media (max-width:900px){
+   .videopage_container{
+      flex-direction: column;
+   };
 }

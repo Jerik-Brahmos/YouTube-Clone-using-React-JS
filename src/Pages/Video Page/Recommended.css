@@ -1,5 +1,6 @@
 .recommended{
     flex-basis: 30%;
+
 }.r_card{
     display: flex;
     justify-content: space-between;
@@ -47,8 +48,26 @@
   }
   
 @media (max-width:900px){
-    .recommended{
-        display:none;
-    }
+   .recommended{
+    margin: 0%;
+    padding: 0%;
+       
+   } 
+   .r_card{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+
+    margin-top: 10px;
+   }
+   .recommended img{
+    width: 100vw;
+    border-radius: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+   }
 
 }

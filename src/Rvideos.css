@@ -1,20 +1,28 @@
-.Rvideos{
+.Rvideos {
     display: grid;
-    flex:0.98;
+    flex: 0.98;
     margin-top: 10px;
-    padding-left:10px;
-    padding-right:10px;
-    margin:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
     margin-left: 10px;
 }
-.top_category{
+
+Link {
+
+    color: white;
+    text-decoration: none;
+}
+
+.top_category {
     display: flex;
     margin-bottom: 10px;
 }
-.top_category h4{
+
+.top_category h4 {
     font-size: 12px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 6px;
     padding-bottom: 6px;
     background-color: #272727;
@@ -23,59 +31,87 @@
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.top_category h4:hover{
+
+.top_category h4:hover {
     cursor: pointer;
     background-color: #3F3F3F;
 }
-.feed{
+
+.feed {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-column-gap: 16px;
     grid-row-gap: 30px;
-} 
-.card > img{
+}
+
+.card>img {
     width: 100%;
     border-radius: 10px;
 }
-.card h4{
+
+.card h4 {
     font-size: 12px;
     font-weight: 500;
-    margin:3px;
+    margin: 3px;
     color: white;
 }
-.card h6{
-    color:rgb(169, 169, 169);
-    font-weight:600px;
+
+.card h6 {
+    color: rgb(169, 169, 169);
+    font-weight: 600px;
     margin: 3px;
 }
-.larger{
+
+.larger {
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
-.tcategory.selected{
-    background-color: white;
-    color: black;
-}
-.tcategory.selected:hover{
-    background-color: white;
-    color: black;
-}
-@media (max-width:900px){
-    .Rvideos{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .feed{
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    }
-}
-@media (max-width:700px){
 
-    .feed{
+.tcategory.selected {
+    background-color: white;
+    color: black;
+}
+
+.tcategory.selected:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:700px) {
+    .Rvideos {
+        padding: 0%;
+        margin-left: 3%;
+    }
+
+    .feed {
         grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 16px;
+        padding: 0%;
+        margin: 0%;
         width: 100%;
     }
-    .top_category{
+
+    .top_category {
         display: none;
+    }
+
+    .card {
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    /*     .Rvideos {
+        padding-left: 5%;
+        padding-right: 5%;
+    } */
+
+    .feed {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        padding: 0%;
+        margin: 0%;
+    }
+    .card{
+        padding: 0%;
+        margin: 0%;
     }
 }
