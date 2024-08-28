@@ -11,11 +11,12 @@
 
 ### Deployment
 
-This application is deployed using Firebase. You can access the deployed version [here](https://clone-c23ea.web.app)![Screenshot 2024-08-28 150656]
+This application is deployed using Firebase. You can access the deployed version [here](https://clone-c23ea.web.app)
 
 ### Output
 
-(https://github.com/user-attachments/assets/82323b2d-404e-4085-a010-273f031607d2)
+![Screenshot 2024-08-28 150656](https://github.com/user-attachments/assets/9db8396f-ed46-4047-89d7-73983687a482)
+
 
 
 ### Contributing
